@@ -14,6 +14,38 @@ class Movie{
         $this->type = $type;
         $this->release = $release;
     }
+
+    //GETTERS & SETTERS
+    function set_name($name){
+        $this-> name = $name;
+    }
+
+    function get_name(){
+        return $this-> name;
+    }
+
+    function set_type($type){
+        $this-> type = $type;
+    }
+    function get_type(){
+        return $this -> type;
+    }
+
+    function set_release($release){
+        $this -> release = $release;
+    }
+
+    function get_release(){
+         return $this -> release;
+    }
+
+    function set_boxOffice($boxOffice){
+        $this -> boxOffice = $boxOffice;
+    }
+
+    function get_boxOffice(){
+        return $this -> boxOffice;
+    }
 }
 
 //ISTANZA DELL OGGETTO MOVIE
