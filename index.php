@@ -46,12 +46,22 @@ class Movie{
     function get_boxOffice(){
         return $this -> boxOffice;
     }
+
+    //METODI 
+    function print(){
+        echo "Questo è il film <h3> $this->name , </h3> di tipo <h4> $this->type, </h4>  uscito il <h4> $this->release,</h4> l ' incasso è <h4>$this->boxOffice </h4> <br> <br>";
+    }
 }
 
 //ISTANZA DELL OGGETTO MOVIE
 //TRAMITE IL COSTRUTTORE ABBIMAO PASSATO DEI VALORI ALLE SUE PROPRIETà
 $movie1 = new Movie('Kimetsu no yaiba', 'Anime/Action', '2020');
-var_dump($movie1);
+$movie1 -> set_boxOffice(120 . 'mln');
+$movie1-> print();
+
+$movie2 = new Movie('Titanic', 'Drama', '1997');
+$movie2 -> set_boxOffice(886 . 'mln');
+$movie2 -> print();
 
 
 ?>
